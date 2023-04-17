@@ -128,4 +128,17 @@ nav li a {
 
 .dropdown-content a:hover {
     background-color: rgb(214, 214, 214);
-  }
+}
+
+.text{
+    text-align: center;
+}
+
+.text h1{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.text small{
+    font-size: 15px;
+}
