@@ -194,8 +194,10 @@ nav li a {
   /* main news content */
 
 .content {
+    display: flex;
+    flex-direction: row;
     width: 830px;
-    height: 830px;
+    height: 800px;
     background-color:#fff;
     float:left;
     margin: 20px 10px 30px 35px;
@@ -205,12 +207,12 @@ nav li a {
     background-color: #fff;
     margin:0;
     width: 450px;
-    height:800px;
+    height:750px;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 10px;
-    border-right: 1px solid #000;
+    border-right: 1px solid #cad1d6;
 }
 .one img{
     width: 400px;
@@ -233,22 +235,103 @@ nav li a {
     font-weight: lighter;
     font-size: 15px;
 }
+
+.two{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height:800px;
+    position:relative;
+    margin: 10px;
+}
+
+.two h2{
+    color: #cf2e2e;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #cad1d6;
+    padding:0px 0px 10px 10px;
+}
+
+.news-snippet,
+.feature .news-snippet{
+    display: flex;
+    flex-direction: row;
+    height: 100px ;
+    width: 330px;
+    margin:10px;
+    border-bottom: 1px solid #cad1d6;
+}
+
+.two .news-snippet img,
+.feature .news-snippet img{
+    width: 100px;
+    height: 80px;
+}
+.two .news-snippet a,
+.feature .news-snippet a{
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.two .news-snippet a:hover,
+.title-list ol li a:hover,
+.feature .news-snippet a:hover{
+    color:#cf2e2e;
+}
 .sidebar {
     width:350px;
-    height:500px;
-    background-color:#0d7963;
+    height:auto;
+    background-color:#fff;
     float:right;
     margin: 20px 35px 30px 7px;
 }
 
+.title-list{
+    border: 1px solid #cad1d6;
+}
+
+.title-list li{
+    font-weight: bold;
+    border-bottom: 1px solid #cad1d6;
+    margin:15px;
+    padding: 0 0 15px;
+}
+
+.title-list ol li small{
+    margin: 10px 0 0 0;
+    font-weight: lighter;
+    color: #534a37;
+}
+.title-list ol li a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: #000;
+    padding:5px;
+}
+.sidebar h2{
+    color: #cf2e2e;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid #cad1d6;
+    padding:0px 0px 10px 10px;
+}
+
+/* feature catagory */
+.feature{
+    margin:30px 0 0 0;
+    border: 1px solid #cad1d6;
+}
+
   /* footer style */
   .footer {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     height:250px;
+    width: 95%;
     margin:35px;
     background-color:rgb(0,58,103);
 }
